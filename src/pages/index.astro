@@ -8,13 +8,40 @@ import Header from '../components/header.astro'
 
     <Header client:load/>
 
-    <div class="relative h-72 bg-cover bg-center" style="background-image: url('/bg1.svg');">
-      
-      <div class="absolute inset-0 flex items-center justify-center">
-        <div class="text-center">
-          <h1 class="text-white text-4xl font-bold mb-4">Recursos de enseñanza <br> y de planeación</h1>
-          <button class="text-xl bg-custom-blue  text-white font-bold py-2 px-4 mt-5">Admisión</button>
+	<main class="mt-24">
 
 
+		<div class="relative h-72 bg-cover bg-center" style="background-image: url('/bg1.svg');">
+			
+			<div class="absolute inset-0 flex items-center justify-center">
 
+				<div class="text-center">
+
+					<h1 class="text-white text-4xl font-bold mb-4">Recursos de enseñanza <br> y de planeación</h1>
+					<button class="text-xl bg-custom-blue  text-white font-bold py-2 px-4 mt-5">Admisión</button>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="container mx-auto py-8">
+			<div class="flex justify-center items-center">
+
+				<div class="text-center mx-4">
+				<img src="/imgPortal.svg" alt="Portal" class="w-80 h-64 object-cover mx-auto">
+				<p class="text-xl font-bold flex items-center justify-center px-4 py-2 text-black">Portal</p>
+			  </div>
+
+			  <div class="text-center mx-4">
+				<img src="/imgKinder.svg" alt="Kinder" class="w-80 h-64 object-cover mx-auto">
+				<p class="text-xl font-bold flex items-center justify-center px-4 py-2 text-black">Kinder</p>
+			  </div>
+
+			  <div class="text-center mx-4">
+				<img src="/imgPrimaria.svg" alt="Primaria" class="w-80 h-64 object-cover mx-auto">
+				<p class="text-xl font-bold flex items-center justify-center px-4 py-2 text-black">Primaria</p>
+			  </div>
+			</div>
+		  </div>
+	</main>
     </Layout>
