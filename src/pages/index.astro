@@ -1,16 +1,20 @@
 ---
-
+import Layout from '../layouts/Layout.astro'
+import Header from '../components/header.astro'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+
+  <Layout>
+
+    <Header client:load/>
+
+    <div class="relative h-72 bg-cover bg-center" style="background-image: url('/bg1.svg');">
+      
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="text-center">
+          <h1 class="text-white text-4xl font-bold mb-4">Recursos de enseñanza <br> y de planeación</h1>
+          <button class="text-xl bg-custom-blue  text-white font-bold py-2 px-4 mt-5">Admisión</button>
+
+
+
+    </Layout>
