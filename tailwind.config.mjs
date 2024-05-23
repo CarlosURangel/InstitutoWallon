@@ -12,7 +12,7 @@ export default {
 				'custom-gd-orange2': '#9A7B31',
 				'custom-gd-blue1': '#59B3CE',
 				'custom-gd-blue2': '#326277'
-			}
+			}		
 		},
 	},
 	plugins: [],
