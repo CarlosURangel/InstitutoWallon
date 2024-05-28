@@ -7,6 +7,7 @@ import MetodologiaCard2 from '../components/metodologia-card2.astro'
 import MetodologiaCard3 from '../components/metodologia-card3.astro'
 import NuestrosLogros from '../components/NuestrosLogros.astro'
 import Testimonios from '../components/Testimonios.astro'
+import Primary from '../components/orimaria.astro'
 
 ---
 
@@ -44,10 +45,13 @@ import Testimonios from '../components/Testimonios.astro'
 				<p class="text-xl font-bold flex items-center justify-center px-4 py-2 text-black">Kinder</p>
 			  </div>
 
-			  <div class="text-center mx-4">
-				<img src="/imgPrimaria.svg" alt="Primaria" class="w-80 h-64 object-cover mx-auto">
-				<p class="text-xl font-bold flex items-center justify-center px-4 py-2 text-black">Primaria</p>
-			  </div>
+			  <div
+  class="text-center mx-4 cursor-pointer"
+  onclick="location.href='/primaria'"
+>
+  <img src="/imgPrimaria.svg" alt="Primaria" class="w-80 h-64 object-cover mx-auto">
+  <p class="text-xl font-bold flex items-center justify-center px-4 py-2 text-black">Primaria</p>
+</div>
 			</div>
 		  </div>
 
@@ -102,5 +106,6 @@ import Testimonios from '../components/Testimonios.astro'
 		  
 		  <NuestrosLogros />
 		  <Testimonios />  
+		  <Primary />
 		</main>
     </Layout>
