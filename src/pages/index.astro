@@ -7,7 +7,6 @@ import MetodologiaCard2 from '../components/metodologia-card2.astro'
 import MetodologiaCard3 from '../components/metodologia-card3.astro'
 import NuestrosLogros from '../components/NuestrosLogros.astro'
 import Testimonios from '../components/Testimonios.astro'
-import Primary from '../components/orimaria.astro'
 
 ---
 <style>
@@ -28,8 +27,13 @@ import Primary from '../components/orimaria.astro'
 				<div class="text-center">
 
 					<h1 class="text-white text-4xl font-bold mb-4">Recursos de enseñanza <br> y de planeación</h1>
-					<button class="text-xl bg-custom-blue  text-white font-bold py-2 px-4 mt-5">Admisión</button>
+					<button id="contactButton" class="text-xl bg-custom-blue  text-white font-bold py-2 px-4 mt-5">Admisión</button>
 					
+					<script>
+						document.getElementById('contactButton').onclick = function() {
+							window.open('https://wa.me/524422280012?text=Hola%20Instituto%20Wallon%0AVi%20su%20pagina%20web%20y%20me%20gutar%C3%ADa%20saber%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20escuela.%0AMuchas%20gracias', '_blank');
+						};
+					</script>
 				</div>
 			</div>
 		</div>
